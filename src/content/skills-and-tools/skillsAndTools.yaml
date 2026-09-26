@@ -1,19 +1,36 @@
 - id: 1
-  title: Tools
+  title: Lenguajes
   items:
-    - Go
     - Python
     - TypeScript
+    - HTML
+    - CSS
     - SQL
-    - AWS
-    - Docker
-    - PostgreSQL
+
 - id: 2
-  title: Skills
+  title: Frameworks y bibliotecas
   items:
-    - Distributed Systems
-    - REST/gRPC APIs
-    - Scalability
-    - Unit/integration/E2E testing
-    - Ethereum, EVM, smart contracts
-    - Code reviews, documentation
+    - React
+    - Next.js
+    - NestJS
+    - Tailwind CSS
+
+- id: 3
+  title: Herramientas y bases de datos
+  items:
+    - Git
+    - GitHub
+    - PostgreSQL
+    - Drizzle ORM
+    - Postman
+    - Visual Studio Code
+
+- id: 4
+  title: Habilidades
+  items:
+    - Desarrollo frontend
+    - Diseño responsive
+    - Desarrollo de API REST
+    - Gestión de roles y permisos
+    - Bases de datos relacionales
+    - Trabajo colaborativo con Git

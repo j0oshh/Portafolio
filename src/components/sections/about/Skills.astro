@@ -1,20 +1,17 @@
 ---
-// components
+// Componentes
 import Section from "../../elements/Section.astro";
 import Tag from "../../elements/Tag.astro";
 import Text from "../../elements/Text.astro";
 
-// content collection
+// Colección de contenido
 import { getCollection } from "astro:content";
 const skillsAndTools = await getCollection("skillsAndTools");
-
-
 ---
 
 <Section
-    aria-label="Tools and Skills"
-    title="Tools & Skills"
-    titleHeading="What I know and use in my day to day work"
+    aria-label="Herramientas y habilidades"
+    titleHeading="Lo que aprendo y utilizo en mis proyectos"
 >
     {
         skillsAndTools.map((category) => (

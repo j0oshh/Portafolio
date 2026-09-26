@@ -7,15 +7,29 @@ import SocialLinks from "../../elements/SocialLinks.astro";
 ---
 
 <Section
-    aria-label="Contact"
-    title="Contact"
-    titleHeading="Let's connect!"
+    aria-label="Contacto"
+    titleHeading="¡Conectemos!"
 >
     <div class="flex flex-col gap-16 text-base-400">
-        <Text variant={'normal'}>Want to talk about something I’ve worked on, share an opportunity, or just say hello? I’d love to hear from you.</Text>
-        <Text variant={'normal'}>The fastest way to reach me is by email at <Link variant="inline" href="mailto:andydecker@email.com" text="andydecker@gmail.com" />.</Text>
-        <Text variant={'normal'}>You can also find me online or send a message through any of these platforms:</Text>    
+        <Text variant={'normal'}>
+            ¿Quieres conversar sobre mis proyectos, compartir una oportunidad
+            o simplemente saludar? Me encantaría saber de ti.
+        </Text>
+
+        <Text variant={'normal'}>
+            Puedes escribirme al correo
+            <Link
+                variant="inline"
+                href="mailto:pimentelalvaradojoseph@gmail.com"
+                text="pimentelalvaradojoseph@gmail.com"
+            />.
+        </Text>
+
+        <Text variant={'normal'}>
+            También puedes encontrarme o enviarme un mensaje a través
+            de estas plataformas:
+        </Text>
     </div>
-    
+
     <SocialLinks />
 </Section>

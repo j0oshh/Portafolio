@@ -18,8 +18,11 @@ content:
           multiple: true
           values:
             - HTML
+            - CSS
             - JavaScript
             - TypeScript
+            - Next.js
+            - Python
             - LIVE
             - Docker
             - React Native

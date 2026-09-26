@@ -1,8 +1,9 @@
 - id: 1
-  title: BSc Computer Science
-  timeline: 2015 — 2018
-  school: University of Manchester
+  title: Desarrollo de Software
+  timeline: En curso
+  school: SENATI
+
 - id: 2
-  title: Foundations in Software Engineering
-  timeline: 2012 — 2015
-  school: Self-directed learning & online coursework
+  title: Aprendizaje complementario en desarrollo web
+  timeline: Actualmente
+  school: Formación autodidacta y proyectos personales

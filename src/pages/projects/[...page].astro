@@ -1,45 +1,45 @@
 ---
-// layout
-import Layout from "../../layout/Layout.astro"
+// Diseño
+import Layout from "../../layout/Layout.astro";
 
-// components
+// Componentes
 import Section from "../../components/elements/Section.astro";
 import ProjectCard from "../../components/elements/ProjectCard.astro";
 import Pagination from "../../components/elements/Pagination.astro";
 
-// routing
+// Rutas
 import type { GetStaticPaths } from "astro";
 import { getCollection } from "astro:content";
-export const getStaticPaths = (async ({paginate}) => {
-    const projects = await getCollection("projects", ({data}) => !data.isDraft)
-    return paginate(projects, {pageSize: 6});
+
+export const getStaticPaths = (async ({ paginate }) => {
+    const projects = await getCollection("projects", ({ data }) => !data.isDraft);
+    return paginate(projects, { pageSize: 6 });
 }) satisfies GetStaticPaths;
 
-// props
+// Propiedades
 const { page } = Astro.props;
 ---
 
 <Layout
-    title="All Projects"
-    description="All Projects for software engineer Andy Decker."
-    ogImage="" 
+    title="Todos los proyectos"
+    description="Proyectos de Joseph, estudiante de Desarrollo de Software."
+    ogImage=""
 >
     <Section
-        title="Projects"
-        titleHeading="Things I've built, broken and experimented with"
+        titleHeading="Lo que he creado, probado y aprendido"
     >
-    {
-        page.data.map((project) => (
-            <ProjectCard 
+        {
+            page.data.map((project) => (
+                <ProjectCard
                     title={project.data.title}
                     year={project.data.year}
                     github={project.data.github}
                     website={project.data.liveSite}
                     description={project.data.description}
                     tools={project.data.tools}
-            />
-        ))
-    }
-    <Pagination prev={page.url.prev} next={page.url.next} />
+                />
+            ))
+        }
+        <Pagination prev={page.url.prev} next={page.url.next} />
     </Section>
 </Layout>

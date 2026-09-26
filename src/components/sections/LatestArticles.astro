@@ -1,12 +1,12 @@
 ---
-// components
+// Componentes
 import Section from "../elements/Section.astro";
 import ArticleCard from "../elements/ArticleCard.astro";
 
-// utils
+// Utilidades
 import { getReadingTime } from "../../utils/readingTime";
 
-// content collection
+// Colección de contenido
 import { getCollection } from "astro:content";
 const blog = await getCollection("blog");
 const recentArticles = blog
@@ -18,20 +18,19 @@ const recentArticles = blog
   }));
 ---
 
-<Section 
-    aria-label="Latest Articles"
-    title="Latest Articles"
-    titleHeading="What I've recently wrote"
+<Section
+    aria-label="Últimos artículos"
+    titleHeading="Lo último en lo que trabaje"
 >
     {
-            recentArticles.map((article) => (
-                <ArticleCard
-                    title={article.data.title}
-                    publishedDate={article.data.publishedDate}
-                    slug={article.data.slug}
-                    category={article.data.category}
-                    readingTime={article.readingTime}
-                />
-            ))
-        }
+        recentArticles.map((article) => (
+            <ArticleCard
+                title={article.data.title}
+                publishedDate={article.data.publishedDate}
+                slug={article.data.slug}
+                category={article.data.category}
+                readingTime={article.readingTime}
+            />
+        ))
+    }
 </Section>
