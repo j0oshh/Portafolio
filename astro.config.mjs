@@ -3,17 +3,19 @@ import { defineConfig, fontProviders } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from "@astrojs/sitemap";
 
-// https://astro.build/config
 export default defineConfig({
+  site: "https://j0oshh.github.io",
+  base: "/Portafolio",
+
   fonts: [
-    { 
+    {
       provider: fontProviders.fontsource(),
       name: "VT323",
       cssVariable: "--font-pixels",
       fallbacks: ["monospace"],
       styles: ["normal", "italic"],
     },
-    { 
+    {
       provider: fontProviders.fontsource(),
       name: "JetBrains Mono",
       cssVariable: "--font-mono",
@@ -26,6 +28,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  site: "https://decker-theme.pages.dev", // change to your domain
+
   integrations: [sitemap()]
 });
