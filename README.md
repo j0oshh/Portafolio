@@ -1,50 +1,12 @@
-# Decker - Astro & Tailwind Portfolio Template
+## 🧞 Comandos de Astro
 
-A portfolio Astro & Tailwind theme built for developers and engineers. Decker was built with a retro tech design that combines the performance of Astro with the flexibility of Tailwind CSS to deliver a strong online presence.
+Todos los comandos se ejecutan desde la raíz del proyecto, en una terminal:
 
-- [**Live Demo**](https://decker-gmc.pages.dev) 
-
-If you have any questions, feel free to reach out:
-- [Twitter](https://x.com/_gasparjs)
-- [Bluesky](https://bsky.app/profile/gasparjs.bsky.social)
-- [jessgaspardev@gmail.com](mailto:jessgaspardev@gmail.com)
-
-
-## Pages Included
-
-- Home
-- Projects
-- About
-- Blog
-- Blog post
-- Contact
-- 404
-
-## Features
-
-Built with both developers and content editors in mind, Decker ships with a comprehensive set of features:
-
-- **Content Collections:** Structured data management for projects, blog posts, experience, education and skills — making updates quick, painless, and consistent across your entire site
-- **Reusable Components:** A library of modular components that keep your codebase clean, readable, and straightforward to customize for your portfolio
-- **Custom Tailwind Theme:** A bespoke design system built on Tailwind CSS with a clean, professional aesthetic that is easy to adapt to your portfolio's identity
-- **Pagination:** Keeps your projects and blog scalable and navigable as your portfolio grows over time
-- **Sitemap:** Auto-generated and search-engine ready, ensuring all your pages are indexed from day one without any manual configuration
-- **Optimized for SEO:** Built-in best practices including semantic markup, meta tags, and structured data to help your portfolio rank higher and reach more people
-- **Optimized for Accessibility:** Designed to be usable by everyone, with accessible patterns, and semantic HTML throughout
-- **Ongoing Updates:** Regular improvements and continued compatibility with the latest Astro releases so your theme stays modern and well-maintained
-- **Optional CMS with PagesCMS:** Manage your projects, blog posts, resume, and more site content through an intuitive visual interface — no code required
-
-## 🧞 Astro Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-
+| Comando                   | Acción                                                        |
+| :------------------------ | :------------------------------------------------------------ |
+| `npm install`             | Instala las dependencias                                      |
+| `npm run dev`             | Inicia el servidor de desarrollo local en `localhost:4321`     |
+| `npm run build`           | Genera el sitio para producción en `./dist/`                   |
+| `npm run preview`         | Previsualiza la compilación localmente antes de publicarla     |
+| `npm run astro ...`       | Ejecuta comandos de la CLI, como `astro add` y `astro check`   |
+| `npm run astro -- --help` | Muestra ayuda sobre el uso de la CLI de Astro                  |
